@@ -5,8 +5,8 @@ html,body{
     overflow: hidden;
 }
 
-.container {
-    width: 400px;
+.calculator {
+    width: 320px;
     height: 400px;
     background-color: rgb(90, 129, 180);     
     position: absolute;
@@ -20,29 +20,30 @@ html,body{
     }
 
 .result-container{
-    width: auto;
+    width: 200px;
     height: auto;
-    padding-top: 50px;    
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
 }
 
 #result{
     height: 50px;
-    width:  300px;
+    background-color: white;
+}
+
+#display{
+    height: 50px;
+    background-color:white;
 }
 
 .key-container{
     padding-top: 20px;
     width: auto;
     height: auto;
-    display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.operator-container{
-    width: auto;
-    height: auto;
-    display: inline-grid;
-    grid-template-rows: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 button {
@@ -73,6 +74,6 @@ button.number{
 }
 
 button.operator{
-    background-color: crimson;
+    background-color: rgb(24, 132, 136);
     color: white;
 }
