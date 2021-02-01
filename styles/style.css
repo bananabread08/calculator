@@ -3,39 +3,54 @@ html,body{
     padding:0;
     margin:0;
     overflow: hidden;
+    background-color: gray;
+    font-family: 'Quicksand', 'Roboto', sans-serif;
+}
+
+header{
+    text-align: center;
+    font-family: monospace;
 }
 
 .calculator {
     width: 320px;
-    height: 400px;
-    background-color: rgb(90, 129, 180);     
-    position: absolute;
+    height: 400px;   
     top:0;
     bottom: 0;
     left: 0;
-    right: 0;      
+    right: 0;   
     margin: auto;
     text-align: center;
+    background-color: rgb(90, 129, 180);  
     border: 2px solid rgb(66, 75, 128);
+    border-radius: 10px;
     }
 
 .result-container{
-    width: 200px;
-    height: auto;
-    margin-top: 20px;
+    width: 300px;
+    height:100px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    border:2px solid white;
+    border-radius: 15px;
+    overflow:hidden;
 }
 
 #result{
+    font-size: 30px;
+    color: rgba(32, 99, 6, 0.849);
+    text-align: right;
     height: 50px;
-    background-color: white;
+    background-color: rgba(161, 156, 156, 0.692);
 }
 
 #display{
+    font-size: 20px;
+    text-align: right;
     height: 50px;
-    background-color:white;
+    background-color: rgba(161, 156, 156, 0.692);
+    overflow: hidden;
 }
 
 .key-container{
@@ -47,21 +62,19 @@ html,body{
 }
 
 button {
-    padding: 10px  20px;
+    padding: 10px;
     font-size: large;
-    font-family: Georgia, serif;
+    font-weight: 800;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
     -webkit-transition-property: transform;
     transition-property: transform;
 }
 
 button:hover ,button:focus{
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .button:active {
@@ -76,4 +89,29 @@ button.number{
 button.operator{
     background-color: rgb(24, 132, 136);
     color: white;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(113, 136, 211);
+    color: white;
+    text-align: center;
+  }
+
+.footer-desc{
+    float: left;
+    text-align: center;
+}
+
+.links{
+    padding-top: 15px;
+    padding-right: 20px;
+    float: right;
+}
+
+.links a{
+    text-decoration: none;
 }
